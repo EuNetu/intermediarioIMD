@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semana 1</title>
+</head>
+
+<body style="text-align:center">
+  <h1>Programação estruturada</h1>
+  <h1>Semana1/Aulas 1 e 2</h1>
+  <h2>Exercício 1</h2>
+  <h3>Digite dois números e veja sua somatória</h3>
+
+  primeiro valor: <input type="number" placeholder="Digite o primeiro valor" id="primeiroValor">
+</br>
+  segundo valor: <input type="number" placeholder="Digite o segundo valor" id="segundoValor" style="margin-top: 10px">
+  </br>
+  <button onclick="somar()" style="margin-top: 10px">Clique Aqui</button>
+
+  <p id="resposta">Digite um número</p>
+  <footer>
+    <p><strong>Feito por Euclides Neto &copy; Todos os direitos reservados - 2022</strong></p>
+  </footer>
+</body>
+<script>
+  function somar() {
+    let primeiroValor = Number(document.getElementById("primeiroValor").value);
+    let segundoValor = Number(document.getElementById("segundoValor").value);
+    let resultado = primeiroValor + segundoValor;
+    document.getElementById("resposta").innerHTML = `A soma de ${primeiroValor} e ${segundoValor} é ${resultado}`;
+  }
+</script>
+
+</html>
