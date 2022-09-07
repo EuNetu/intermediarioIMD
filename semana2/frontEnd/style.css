@@ -1,0 +1,73 @@
+body {
+    background-color: rgb(154, 144, 170);
+    text-align: center;
+    margin: 0 360px;
+}
+
+header {
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caixa {
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+p {
+    text-align: justify;
+}
+
+li {
+    margin-right: 35px;
+}
+
+footer {
+    text-align: center;
+    background-color: #000000;
+    color: #BBBBBB;
+    padding: 10px 300px;
+}
+
+a:link {
+    color: rgb(110, 129, 110);
+}
+
+
+/*  link visitado */
+
+a:visited {
+    color: rgb(66, 22, 170);
+}
+
+
+/* mouse sobre o link */
+
+a:hover {
+    color: red;
+}
+
+
+/* Link clicado */
+
+a:active {
+    color: yellow;
+}

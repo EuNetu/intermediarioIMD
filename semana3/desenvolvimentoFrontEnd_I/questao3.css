@@ -1,0 +1,31 @@
+.firstP{
+    background-color: aqua;
+    border: 3px solid black;
+}
+
+.secondP{
+    background-color: white;
+    border: 3px dashed black;
+}
+
+.thirdP{
+    background-color: white;
+    border-style: dashed double dotted solid;
+    border-width: 3px;
+}
+
+.fourthP{
+    background-color: white;
+    border: 3px solid;
+    border-color: red violet blue green;
+}
+
+.fifthP{
+    font-family: Arial;
+    background-color: beige;
+}
+
+.sixthP{
+    font-family: Arial;
+    background-color: beige;
+}
