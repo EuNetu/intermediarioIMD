@@ -1,0 +1,27 @@
+body{
+    text-align: center;
+}
+div, span{
+    background-color: hsl(120, 100%, 25%);
+    display: inline-block;
+}
+#primeiro{
+    width: 2%;
+    height: 30px;
+}
+#segundo{
+    width: 5%;
+    height: 30px;
+}
+#terceiro{
+    width: 10%;
+    height: 30px;
+}
+#quarto{
+    width: 15%;
+    height: 30px;
+}
+#quinto{
+    width: 20%;
+    height: 30px;
+}
