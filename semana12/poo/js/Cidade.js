@@ -2,8 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Cidade = void 0;
 var Cidade = /** @class */ (function () {
-    function Cidade(nome) {
-        this._nome = nome;
+    function Cidade(_nome) {
+        this._nome = _nome;
     }
     Object.defineProperty(Cidade.prototype, "nome", {
         get: function () {

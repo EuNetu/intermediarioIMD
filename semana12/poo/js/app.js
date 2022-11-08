@@ -9,6 +9,8 @@ var Pessoa_1 = require("./Pessoa");
 var natal = new Cidade_1.Cidade("Natal");
 var joao = new Pessoa_1.Pessoa("João", natal);
 var toto = new Animal_1.Animal("Totó", joao);
+console.log(joao.nome);
+console.log(joao.cidade.nome);
 // Atividade 2
 var laptop = new Laptop_1.Laptop();
 var desktop = new Desktop_1.Desktop();

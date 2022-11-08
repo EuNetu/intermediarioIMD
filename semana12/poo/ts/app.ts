@@ -10,6 +10,9 @@ const natal = new Cidade("Natal");
 const joao = new Pessoa("João", natal);
 const toto = new Animal("Totó", joao);
 
+console.log(joao.nome)
+console.log(joao.cidade.nome)
+
 
 // Atividade 2
 const laptop = new Laptop();

@@ -25,11 +25,19 @@
             '{ "youtubeId": "pRpeEdMmmQ0", "title": "Waka Waka" } ]}';
         var objeto = JSON.parse(videos)
 
-        var body = document.querySelector('#principal');
+        var divPrincipal = document.querySelector('#principal');
 
-        var link = document.createElement('a');
-        link.setAttribute('src', 'https://difusora98.com.br/wp-content/uploads/2019/09/ze-ramalho.jpg');
-        document.body.appendChild(imagem);
+        for (key in objeto['mais vistos']) {
+
+            var link = document.createElement('a');
+
+            link.classList.add('list-group', 'list-group-item');
+
+            const texto = document.createTextNode(objeto['mais vistos'][key]['title']);
+            link.appendChild(texto);
+            link.setAttribute('href', 'https://www.youtube.com/watch?v=' + objeto['mais vistos'][key]['youtubeId']);
+            divPrincipal.appendChild(link);
+        }
     </script>
 </body>
 

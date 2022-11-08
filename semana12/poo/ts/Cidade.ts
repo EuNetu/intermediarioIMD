@@ -1,13 +1,10 @@
 export class Cidade{
 
-  private _nome:string;
-
-  constructor(nome:string){
-    this._nome = nome
-  }
+  constructor(
+    private _nome:string
+    ) {}
   
   public get nome() : string {
     return this._nome;
   }
-  
 }

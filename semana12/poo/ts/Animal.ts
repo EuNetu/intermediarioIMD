@@ -1,13 +1,11 @@
 import { Pessoa } from "./Pessoa";
 
 export class Animal{
-  private _nome : string;
-  private _pessoa : Pessoa;
 
-  constructor(nome : string, pessoa : Pessoa){
-    this._nome = nome;
-    this._pessoa = pessoa;
-  }
+  constructor(  
+    private _nome : string,
+    private _pessoa : Pessoa
+    ){}
 
   public get nome() : string {
     return this._nome;

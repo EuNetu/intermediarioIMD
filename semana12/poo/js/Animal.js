@@ -2,9 +2,9 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Animal = void 0;
 var Animal = /** @class */ (function () {
-    function Animal(nome, pessoa) {
-        this._nome = nome;
-        this._pessoa = pessoa;
+    function Animal(_nome, _pessoa) {
+        this._nome = _nome;
+        this._pessoa = _pessoa;
     }
     Object.defineProperty(Animal.prototype, "nome", {
         get: function () {
