@@ -1,22 +1,27 @@
-import { Arqueiro } from "./Arqueiro";
-import { Cachorro } from "./Cachorro";
-import { Guerreiro } from "./Guerreiro";
-import { Personagem } from "./Personagem";
+import { Jogador } from "./Jogador";
+import { Volante } from "./Volante";
 
 
-//Atividade 1
-var bob = new Cachorro()
+//Atvidade 1
+var jogador = new Jogador()
+var volante = new Volante()
 
-bob.exibirInfo()
+jogador.mover()
+volante.mover()
 
 //Atividade 2
 
-function atacarPersonagem(fulano: Personagem){
-  fulano.atacar()
+function adicionar_valor(inicial, adicional){
+  if(adicional <= 0 ){
+    throw new Error('Somente valores positivos devem ser adicionados ao valor inicial')
+  }else{
+    return inicial + adicional
+  }
 }
 
-var thor = new Guerreiro()
-var LaraCroft = new Arqueiro()
-
-atacarPersonagem(thor)
-atacarPersonagem(LaraCroft)
+try {
+  console.log(adicionar_valor(10,20))
+  console.log(adicionar_valor(10,-20))
+} catch (e) {
+  console.log(e)
+}

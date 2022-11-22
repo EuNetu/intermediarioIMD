@@ -1,16 +1,25 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var Arqueiro_1 = require("./Arqueiro");
-var Cachorro_1 = require("./Cachorro");
-var Guerreiro_1 = require("./Guerreiro");
-//Atividade 1
-var bob = new Cachorro_1.Cachorro();
-bob.exibirInfo();
+var Jogador_1 = require("./Jogador");
+var Volante_1 = require("./Volante");
+//Atvidade 1
+var jogador = new Jogador_1.Jogador();
+var volante = new Volante_1.Volante();
+jogador.mover();
+volante.mover();
 //Atividade 2
-function atacarPersonagem(fulano) {
-    fulano.atacar();
+function adicionar_valor(inicial, adicional) {
+    if (adicional <= 0) {
+        throw new Error('Somente valores positivos devem ser adicionados ao valor inicial');
+    }
+    else {
+        return inicial + adicional;
+    }
 }
-var thor = new Guerreiro_1.Guerreiro();
-var LaraCroft = new Arqueiro_1.Arqueiro();
-atacarPersonagem(thor);
-atacarPersonagem(LaraCroft);
+try {
+    console.log(adicionar_valor(10, 20));
+    console.log(adicionar_valor(10, -20));
+}
+catch (e) {
+    console.log(e);
+}
