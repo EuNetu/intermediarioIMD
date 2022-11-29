@@ -1,21 +1,23 @@
-/*$(document).ready(function () {
-  $("#question-1").click(function () {
-      $("#answer-1").toggle();
-  });
+let links = []
+$("a").each(function () {
+  links.push($(this).attr("href"));
+});
 
-  $("#question-2").click(function () {
-      $("#answer-2").toggle();
-  });
+let i = 0
+$("a").each(function () {
+  let img = $(`<img src="${youtube.generateThumbnailUrl(links[i])}" alt='ThumbnailUrl'></img>`)
+  $(this).prepend(img)
+  $( this ).find("img").last().hide()
+  i++
+});
 
-  $("#question-3").click(function () {
-      $("#answer-3").toggle();
-  });
-});*/
-
-function acharPrimeiroIrmao(event) {
-  var target = $( event.target );
-  var li = target.parent();
-  var p = li.children()[1]
-  $(p).toggle()
+function mostrarImagem(event) {
+  $( this ).find( "img" ).last().show(2000)
 }
-$("a").click(acharPrimeiroIrmao);
+function esconderImagem(){
+  $( this ).find( "img" ).last().hide(2000)
+}
+
+$("a").mouseenter(mostrarImagem)
+$("a").mouseleave(esconderImagem)
+
