@@ -1,0 +1,5 @@
+Atividade Aula 15, execução do projeto:
+
+1- download do projeto no material didático;
+2- Abra o gitBash para instalar o projeto com o uso do comando "npm install" na pásta AULA_15;
+2- E posteriormente uso o comando "npm run start";
